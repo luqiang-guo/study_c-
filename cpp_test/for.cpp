@@ -3,11 +3,12 @@
 
 
 int main(void) {
-    int i = 4;
+    int i = 0;
+    int n = 13;
 
-    for(; i < 2; i++) {
-        printf("test \n");
+    for(; i <= n - 4; i += 1) {
+        printf("i = %d \n", i);
     }
-
+    printf("-->i = %d \n", i);
     return 0;
 }
