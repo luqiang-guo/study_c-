@@ -1,0 +1,8 @@
+format,7b-[31:25],5b-[24:20],5b-[19:15],5b-[14:10],1b-[9],3b-[8:6],5b-[5:1],1b-[0],,
+scalar instr name,imm,rs2/imm/csr,rs1/imm,rd/imm,func[4:0],,opcode[5:1],opcode[0],instr function,others
+nop,0,0,0,0,nop-0,,ctrl-0,s-0,nop,
+exit,0,0,0,0,exit-1,,ctrl-0,s-0,exit,
+"loop rs1, rs2",0,rs2,rs1,0,loop-2,,ctrl-0,s-0,loop,
+"add.bf rd, rs1, rs2",/,rs2,rs1,rd,bf16-0,,add-1,s-0,rd = rs1 + rs2,
+"add.i16 rd, rs1, rs2",/,rs2,rs1,vd,int16-1,,add-1,s-0,rd = rs1 + rs2,
+"add.i32 rd, rs1, rs2",/,rs2,rs1,vd,int32-2,,add-1,s-0,rd = rs1 + rs2,
